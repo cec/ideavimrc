@@ -1,0 +1,47 @@
+let mapleader=" "
+
+""" plugins
+set which-key
+set argtextobj
+set textobj-entire
+
+
+""" plugin settings - which-key
+set notimeout
+
+
+""" plugin settings - argtextobj
+let g:argtextobj_pairs="[:],(:),<:>"
+
+
+
+
+""" vim settings
+" show which mode the editor is in
+set showmode
+" ensure that the editor is scrolled with 5 lines on top or on bottom 
+" https://stackoverflow.com/questions/7406814/in-vim-how-do-you-scroll-a-buffer-so-the-cursor-location-is-centered-in-the-scr
+set so=5
+" search as you type
+set incsearch
+" show line numbers
+set number
+
+
+""" idea-specific settings
+set ideajoin
+set ideastatusicon=gray
+
+
+""" ide action mappings
+"map <leader>f f
+
+map <leader>ef <Action>(ReformatCode)
+map <leader>cd <Action>(GotoTypeDeclaration)
+map <leader>cu <Action>(FindUsages)
+map <leader>cj <Action>(QuickJavaDoc)
+map <leader>co <Action>(FileStructurePopup)
+map <leader>rr <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>ri <Action>(Inline)
+map <leader>gc <Action>(CheckinProject)
